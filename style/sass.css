@@ -1,0 +1,151 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+#piano {
+  height: 290px;
+  padding: 90px 30px 0 30px;
+  background-color: #333333;
+  border-radius: 10px;
+}
+
+.keys {
+  position: relative;
+}
+
+.white-keys {
+  display: flex;
+}
+
+.black-keys {
+  position: relative;
+  display: flex;
+}
+
+.white-key {
+  width: 68px;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  border: solid #000 2px;
+  box-sizing: border-box;
+}
+
+.black-key {
+  width: 38px;
+  height: 160px;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #000;
+}
+
+.black-key:nth-child(1) {
+  left: 48px;
+}
+
+.black-key:nth-child(2) {
+  left: 117px;
+}
+
+.black-key:nth-child(3) {
+  left: 253px;
+}
+
+.black-key:nth-child(4) {
+  left: 320px;
+}
+
+.black-key:nth-child(5) {
+  left: 389px;
+}
+
+.black-key:nth-child(6) {
+  left: 525px;
+}
+
+.black-key:nth-child(7) {
+  left: 594px;
+}
+
+.black-key:nth-child(8) {
+  left: 662px;
+}
+
+.black-key:nth-child(9) {
+  left: 797px;
+}
+
+.black-key:nth-child(10) {
+  left: 865px;
+}/*# sourceMappingURL=sass.css.map */
